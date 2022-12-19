@@ -1,0 +1,34 @@
+.title {
+    margin-right: 10vw;
+    font-style: italic;
+}
+
+.image2{
+margin-top: 30vh;
+    
+}
+
+.paragrafo{
+    display: inline-block;
+    text-align: left;
+}
+
+.image {
+    height: max-content;
+    margin-top: 50vh;
+ 
+}
+.negrito{
+    text-decoration: underline;
+    font-weight: bold
+}
+.negrito2{
+    font-weight: bold
+}
+.video{
+    width: 45vw;
+    height: 50vh;
+}
+.container{
+    margin-top: 10vh;
+}

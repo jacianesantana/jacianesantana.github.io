@@ -1,0 +1,13 @@
+.row {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#lista {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#lista li {
+    text-align: start;
+}

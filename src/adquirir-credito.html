@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <title>Educação Financeira</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações sobre como ter uma renda extra e economizar dinheiro. ">
+    <meta name="keywords" content="Investir, Poupar, Economizar, Renda Extra">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/investir.css">
+</head>
+<body>
+<header>
+    <!-- Barra de navegação-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Educação Financeira</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./economizar.html">Economizar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./adquirir-credito.html">Adquirir Crédito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./quitar-dividas.html">Quitar Dívidas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./investir.html">Investir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./recomendacoes.html">Recomendações</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- Conteúdo -->
+    <div class="container">
+        <h1>Adquirir Crédito</h1>
+        <br>
+        <p>Saiba como buscar as menores taxas de crédito para financiamentos e empréstimos. Além da importância de adquirir crédito de forma controlada.</p>
+        <br>
+        <h3>Taxa de juros por modalidade de empréstimo</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Modalidade</th>
+                    <th scope="col">Taxa (a/a)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Cheque especial</th>
+                    <td>318,7%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Rotativo do cartão de crédito </th>
+                    <td>300,3%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Parcelamento do cartão de crédito</th>
+                    <td>175,2%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Crédito pessoal</th>
+                    <td>119,5%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Crédito consignado</th>
+                    <td>22,5%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Empréstimo com garantia de veículo</th>
+                    <td>19,42%</td>
+                </tr>
+                <tr>
+                    <th scope="row">Empréstimo com garantia de imóvel</th>
+                    <td>12,55%</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Simulação</h4>
+        <div class="input-group">
+            <input type="number" id="valorSimulacao" class="form-control" placeholder="Valor" aria-label="Username" aria-describedby="addon-wrapping">
+            <select class="form-select" id="inputGroupSelect" aria-label="Example select with button addon">
+                <option selected>Selecione uma opção</option>
+                <option value="1">Cheque especial</option>
+                <option value="2">Rotativo do cartão de crédito</option>
+                <option value="3">Parcelamento do cartão de crédito</option>
+                <option value="4">Crédito pessoal</option>
+                <option value="5">Crédito consignado</option>
+                <option value="6">Empréstimo com garantia de veículo</option>
+                <option value="7">Empréstimo com garantia de imóvel</option>
+            </select>
+            <button id="btnSimulacao" onclick="simular()" class="btn btn-success" type="button">Simular</button>
+            <button id="btnReset" onclick="reset()" class="btn btn-danger" type="button">Zerar</button>
+        </div>
+        <br>
+        <h5>Valor Total a pagar: <span id="resultado">0</span></h5>
+        <h5>Juros Totais: <span id="juros">0</span></h5>
+        <br>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <h3>Cuidados na hora de adquirir crédito</h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Orçamento pessoal
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        Fique de olho nos seus ganhos e gastos, pois a parcela do empréstimo precisa caber no seu orçamento. É imprescindível ter organização financeira para não perder o controle do que entra ou sai da sua conta.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Anote Tudo
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        Pesquise até encontrar as melhores condições de empréstimos. Caderninho de anotações, planilhas e alguns aplicativos de organização financeira podem ser muito úteis para comparar taxas de juros, condições de pagamento e prazos, por exemplo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Simule
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        Sempre que estiver disponível, use essa ferramenta quantas vezes forem necessárias até encontrar a situação ideal de empréstimo para você. Simulando por meio da ferramenta fornecida por alguns bancos dá para ver o valor da taxa de juros, escolher o número de parcelas, os valores das parcelas e as datas de pagamento das parcelas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container">
+        Educação Financeira &copy 2022 Copyright</br>
+        Todos os direitos reservados
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script src="./js/adquirir-credito.js"></script>
+</body>
+</html>

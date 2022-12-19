@@ -1,0 +1,25 @@
+.row {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+#lista {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#lista li {
+    text-align: start;
+}
+h3{
+  width: 100vh; 
+  margin: auto;
+}
+#img2{
+    text-align: center;
+    right: 50%;
+}
+
+
+    

@@ -1,0 +1,44 @@
+.image{
+   -max-width: 50%;
+  width: max-content;
+    transform: translate(340px, 400px);
+    text-align: center;
+   
+}
+    h3{
+        text-align: left;
+        
+    }
+    
+    p{
+        width: 200%;
+        text-align: left;
+    }
+    .lista{
+       text-align: justify;
+       width: -100%;
+      max-width: 90%;
+    }
+   
+    table{
+
+       text-align: left;
+    
+    }
+    .video{
+        width: 45vw;
+        height: 50vh;
+        text-align: center;
+    }
+   
+    h5{
+        text-align: left;
+    }
+    .reserva{
+        
+        
+        text-align: left;
+        
+    }
+        
+   
